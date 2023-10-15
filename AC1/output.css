@@ -16,7 +16,10 @@ body {
 margin-bottom: 0px;
 }
 
-#display1 {}
+#hanging-icons {
+  background-color: rgb(184, 119, 119);
+  
+}
 
 #nav {
   width: 100%;
