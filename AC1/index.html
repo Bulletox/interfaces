@@ -7,111 +7,72 @@
   <title>Actividad Bootstramp</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600;700&family=Teko:wght@600&family=Young+Serif&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="output.css">
 
 </head>
 
 <body>
-  <header class="p-3 text-bg-dark">
-    <div class="container">
-
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="" fill="currentColor" class="bi bi-brilliance"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16ZM1 8a7 7 0 0 0 7 7 3.5 3.5 0 1 0 0-7 3.5 3.5 0 1 1 0-7 7 7 0 0 0-7 7Z" />
-        </svg>
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cosmere</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class=" bg-light nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#display1">Libros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#video">Nacidos de la bruma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hanging-icons">BS</a>
+          </li>
         </ul>
-
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
-            aria-label="Search">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
-        </div>
       </div>
     </div>
-  </header>
+  </nav>
+
+  <div class="b-example-divider"></div>
+  <!------------------------------------------------ JUBO  ------------------------------------------------>
+  <div class="p-5 mb-5 bg-image rounded-3"
+    style="background-image: url('img/caminodelosreyesjumb.jpg');background-size: cover; background-attachment: fixed; background-position-y: 250%; ">
+    >
+    <div class="container-fluid py-5">
+      <h1 class="display-5  fw-bold text-center">Cosmere</h1>
+      <p class="col-md-8 fw-bolder fs-5 bg">
+        El Cosmere de Brandon Sanderson es un vasto universo literario que abarca múltiples series. Cada libro tiene su
+        propia historia y sistema de magia, pero comparten un mundo y elementos conectados, creando una experiencia
+        única para los lectores.
+      </p>
+    </div>
+  </div>
 
   <div class="b-example-divider"></div>
 
   <div class="" id="display1">
     <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="img/cover_of_the_final_empire.jpg" alt="Descripción de la imagen" class="img-fluid">
-            <div class="card-body">
-              <h4 class="card-text">"El Imperio Final"</h4>
-              <p class="card-text">
-                "Una obra maestra con un mundo fascinante y personajes intrigantes. Brandon Sanderson es un genio
-                literario."</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="img/elpozode la ascensio.jpg" alt="Descripción de la imagen" class="img-fluid">
-            <div class="card-body">
-              <h4 class="card-text">"El Pozo de la Ascensión"</h4>
-              <p class="card-text">
-                "Una secuela que supera las expectativas, llena de giros inesperados."</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="img/eras.jpg" alt="Descripción de la imagen" class="img-fluid">
-            <div class="card-body">
-              <h4 class="card-text">"El Héroe de las Eras"</h4>
-              <p class="card-text">
-                "Cierre perfecto para una trilogía inolvidable. Emocionante y satisfactorio."</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
+      <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-3 align-items-stretch">
+        <div class="col-sm-3">
+          <div class="card h-100 shadow-sm">
             <img src="img/elantris.jpg" alt="Descripción de la imagen" class="img-fluid">
             <div class="card-body">
-              <h4 class="card-text">"Elantris"</h4>
+              <h2 class="card-text">"Elantris"</h2>
               <p class="card-text">
                 "Un inicio sorprendente en el mundo de Sanderson. 'Elantris' presenta una trama llena de misterio y
                 personajes inolvidables."</p>
@@ -120,7 +81,54 @@
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/cover_of_the_final_empire.jpg" alt="Descripción de la imagen" class="img-fluid">
+            <div class="card-body">
+              <h2 class="card-text">"El Imperio Final"</h2>
+              <p class="card-text">
+                "Una obra maestra con un mundo fascinante y personajes intrigantes."</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/elpozode la ascensio.jpg" alt="Descripción de la imagen" class="img-fluid">
+            <div class="card-body">
+              <h2 class="card-text">"El Pozo de la Ascensión"</h2>
+              <p class="card-text">
+                "Una secuela que supera las expectativas, llena de giros inesperados."</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/eras.jpg" alt="Descripción de la imagen" class="img-fluid">
+            <div class="card-body">
+              <h2 class="card-text">"El Héroe de las Eras"</h2>
+              <p class="card-text">
+                "Cierre perfecto para una trilogía inolvidable. Emocionante y satisfactorio."</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
               </div>
             </div>
           </div>
@@ -130,90 +138,92 @@
   </div>
 
   <div class="b-example-divider"></div>
-  <!-------------------------------------------- Seccion de vido -------------------------------------------->
-  <div class="video">
+  <!-------------------------------------------- Seccion de video -------------------------------------------->
+  <div class="video" id="video">
     <div class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom">Nacidos de la bruma</h2>
+      <h2 class="pb-2 border-bottom text-light ">Nacidos de la bruma</h2>
 
       <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XfAHDpnm3rM?si=jSnGnHMeXKZUPusK"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-
-        <div class="col">
-          <div class="row row-cols-1 row-cols-sm-2 g-4">
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <img src="/img/cover_of_the_final_empire.jpg" alt="Descripción de la imagen" class="img-fluid">
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">El imperio final</h4>
-              <p class="text-body-secondary">"Una obra maestra con un mundo fascinante y personajes intrigantes. Brandon
-                Sanderson</p>
-            </div>
-
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <img src="/img/elpozode la ascensio.jpg" alt="Descripción de la imagen" class="img-fluid">
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">El pozo de la ascensión</h4>
-              <p class="text-body-secondary">"Una secuela que supera las expectativas, llena de giros inesperados."</p>
-            </div>
-
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <img src="/img/eras.jpg" alt="Descripción de la imagen" class="img-fluid">
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">El héroe de las eras</h4>
-              <p class="text-body-secondary">"Cierre perfecto para una trilogía inolvidable. Emocionante y
-                satisfactorio."</p>
-            </div>
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#gear-fill"></use>
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Aleación de ley</h4>
-              <p class="text-body-secondary">"Regreso al mundo de alomancia con un toque de western. Ideal para fans y
-                nuevos lectores."</p>
-            </div>
-
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#speedometer"></use>
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Sombras de identidad</h4>
-              <p class="text-body-secondary">"Fantasía y steampunk se mezclan en una obra cautivadora."</p>
-            </div>
-            <div class="col d-flex flex-column gap-2">
-              <div
-                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#table"></use>
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Brazales de duelo</h4>
-              <p class="text-body-secondary">"Adición explosiva llena de intrigas y personajes memorables. La serie solo
-                sigue mejorando."</p>
-            </div>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ljB41NtfNsM?si=ijlns8rz4Zp6dyp1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <div class="video-info text-start">
+            <h3 class="fw-semibold mb-0 text-body-emphasis">ANTES DE LEER NACIDOS DE LA BRUMA</h3>
+            <p class="text-body-secondary">Video introductorio a la saga Nacidos de la Bruma, orientado a toda aquella
+              gente que quiera empezar o este con dudas de si hacerlo o no.</p>
           </div>
         </div>
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col d-flex gap-2">
+              <img src="img/metales/Hierro.webp" alt="imagen alimantica del Hierro" class="img-fluid"
+                style="max-width: 50px; max-height: 50px;">
+              <div class="text-start">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">El imperio final</h4>
+                <p class="text-body-secondary">"Una obra maestra con un mundo fascinante y personajes intrigantes.
+                  Brandon Sanderson"</p>
+              </div>
+
+            </div>
+
+            <div class="col d-flex gap-2">
+              <img src="img/metales/Acero.webp" alt="imagen alimantica del Acero" class="img-fluid"
+                style="max-width: 50px; max-height: 50px;">
+              <div class="text-start">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">El pozo de la ascensión</h4>
+                <p class="text-body-secondary">"Una secuela que supera las expectativas, llena de giros inesperados."
+                </p>
+              </div>
+            </div>
+
+            <div class="col d-flex gap-2">
+              <img src="img/metales/Zinc.webp" alt="Descripción de la Zinc" class="img-fluid"
+                style="max-width: 50px; max-height: 50px;">
+              <div class="text-start">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">El héroe de las eras</h4>
+                <p class="text-body-secondary">"Cierre perfecto para una trilogía inolvidable. Emocionante y
+                  satisfactorio."</p>
+              </div>
+            </div>
+
+            <div class="col d-flex gap-2">
+              <img src="img/metales/Estaño.webp" alt="Descripción de la imagen" class="img-fluid"
+                style="max-width: 50px; max-height: 50px;">
+              <div class="text-start">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Aleación de ley</h4>
+                <p class="text-body-secondary">"Regreso al mundo de alomancia con un toque de western. Ideal para fans y
+                  nuevos lectores.."</p>
+              </div>
+            </div>
+
+            <div class="col d-flex gap-2">
+              <img src="img/metales/Duralumin_29.webp" alt="Descripción de la imagen" class="img-fluid"
+                style="max-width: 50px; max-height: 50px;">
+              <div class="text-start">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Sombras de identidad</h4>
+                <p class="text-body-secondary">"Fantasía y steampunk se mezclan en una obra cautivadora."</p>
+              </div>
+            </div>
+
+            <div class="col d-flex gap-2">
+              <img src="img/metales/Bronce.webp" alt="Descripción de la imagen" class="img-fluid"
+                style="max-width: 50px; max-height: 50px;">
+              <div class="text-start">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Brazales de duelo</h4>
+                <p class="text-body-secondary">"Adición explosiva llena de intrigas y personajes memorables. La serie
+                  solo sigue mejorando."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
+  </div>
+
   </div>
   <div class="b-example-divider"></div>
   <!-- Paralax -->
@@ -225,17 +235,19 @@
         <div class="layer hills"></div>
         <div class="layer foreground"></div>
       </div>
-    </div>
 
+      <div class="text-overlay">
+        <p class="fw-bolder fs-5 bg">Viaje antes que destino</p>
+      </div>
+    </div>
 
     <div id="link">
       <a class="url" href="https://codepad.co/snippet/15m9ZYQS" target="_blank"></a>
     </div>
   </div>
-  <div class="b-example-divider"></div>
   <!-- Otra parte -->
-  <div class="container px-4 py-5" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">Hanging icons</h2>
+  <div class="rounded p-3 mb-2 bg-secondary text-white container bg- px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom text-light">Brandon Sanderson</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="col d-flex align-items-start">
         <div
@@ -245,11 +257,12 @@
           </svg>
         </div>
         <div>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
+          <p class="fs-2 text-ligh text-body-emphasis">El Imperio Final</p>
+          <p class="text-light">La trilogía "Nacidos de la Bruma" de Brandon Sanderson es una obra maestra con un mundo
+            fascinante y personajes intrigantes. Descubre la magia de Allomancia y disfruta de una historia épica llena
+            de giros inesperados.</p>
           <a href="#" class="btn btn-primary">
-            Primary button
+            Leer más
           </a>
         </div>
       </div>
@@ -261,11 +274,11 @@
           </svg>
         </div>
         <div>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
+          <p class="fs-2 text-ligh text-body-emphasis">El Archivo de las Tormentas</p>
+          <p class="text-light">Adéntrate en el increíble mundo de Roshar con "El Archivo de las Tormentas". Brandon
+            Sanderson te llevará a un mundo de alta fantasía lleno de magia, misterio y personajes inolvidables.</p>
           <a href="#" class="btn btn-primary">
-            Primary button
+            Leer más
           </a>
         </div>
       </div>
@@ -277,40 +290,47 @@
           </svg>
         </div>
         <div>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
+          <p class="fs-2 text-ligh text-body-emphasis">Elantris</p>
+          <p class="text-light">Comienza tu viaje en el universo de Brandon Sanderson con "Elantris". Esta novela te
+            llevará a una ciudad misteriosa y a un sistema de magia único. ¿Qué secretos oculta Elantris?</p>
           <a href="#" class="btn btn-primary">
-            Primary button
+            Leer más
           </a>
         </div>
       </div>
     </div>
   </div>
-</body>
-<footer>
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
-    </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#twitter"></use>
-          </svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#instagram"></use>
-          </svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#facebook"></use>
-          </svg></a></li>
-    </ul>
-  </footer>
+</body>
+
+<footer class="bg-light d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+    </a>
+    <span class="mb-3 mb-md-0 text-muted">© 2023 Javier Serna Huertas, Inc</span>
+  </div>
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+          <path
+            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+        </svg></a></li>
+    <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg></a></li>
+    <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+        </svg></a></li>
+  </ul>
 </footer>
+
 
 </html>
