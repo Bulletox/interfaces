@@ -12,6 +12,9 @@ body {
   font-family: 'Teko', sans-serif;
   font-family: 'Young Serif', serif;
 }
+#footer {
+margin-bottom: 0px;
+}
 
 #display1 {}
 
